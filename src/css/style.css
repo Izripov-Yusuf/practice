@@ -27,12 +27,37 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .container {
+    max-width: 420px;
+    width: 95%;
+    margin: auto;
+  }
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
   outline: none;
   padding: 18px 30px;
+}
+
+/* Подключение шрифтов */
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: local("../fonts/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* Импорт стилей шапки */
@@ -70,12 +95,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Museo Sans Cyrl 300";
   font-size: 13px;
   font-weight: 400;
 }
 
 .navbar__button {
   margin-left: 30px;
+  font-family: "Museo Sans Cyrl 700";
   font-size: 13px;
   font-weight: 400;
 }
@@ -83,6 +110,7 @@ img {
 .navbar__phone {
   display: inline-block;
   color: #333333;
+  font-family: "Museo Sans Cyrl 700";
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -104,6 +132,18 @@ img {
   }
   .navbar__logo {
     width: 91px;
+  }
+}
+
+@media (width: 320px) {
+  .navbar .button {
+    margin-right: 27px;
+    border-radius: 5px;
+  }
+  .navbar .navbar__button {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 13px 26px 14px 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,9 +14,34 @@ img
   max-width: 580px
   width: 95%
   margin: auto
+@media (max-width: 567px)
+ .container
+  max-width: 420px
+  width: 95%
+  margin: auto
 .button
  border-radius: 10px
  background-color: $main-color
  border: none
  outline: none
  padding: 18px 30px
+
+/* Подключение шрифтов */
+@font-face
+ font-family: 'Museo Sans Cyrl 700'
+ src: url('../fonts/MuseoSansCyrl-700.eot')
+ src: local('../fonts/MuseoSansCyrl-700'),
+ url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+ url('../fonts/MuseoSansCyrl-700.ttf') format('truetype')
+ font-weight: normal
+ font-style: normal
+@font-face
+ font-family: 'Museo Sans Cyrl 300'
+ src: url('../fonts/MuseoSansCyrl-300.eot')
+ src: local('../fonts/MuseoSansCyrl-300'),
+ url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+ url('../fonts/MuseoSansCyrl-300.ttf') format('truetype')
+ font-weight: 300
+ font-style: normal
