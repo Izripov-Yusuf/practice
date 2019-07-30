@@ -157,6 +157,7 @@ li {
 
 .hero {
   padding: 51px 0;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
@@ -168,7 +169,6 @@ li {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 140px;
 }
 
 .hero-text__title {
