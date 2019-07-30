@@ -137,7 +137,7 @@ img {
 
 @media (width: 320px) {
   .navbar .button {
-    margin-right: 27px;
+    margin-right: 10px;
     border-radius: 5px;
   }
   .navbar .navbar__button {
@@ -257,5 +257,29 @@ li {
   .hero-list__image {
     margin-right: 15px;
   }
+}
+
+@media (width: 320px) {
+  .hero {
+    padding: 30px 0;
+  }
+  .hero-text {
+    margin-left: 4px;
+  }
+  .hero-text__title {
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .hero-list__image {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+li {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
 }
 /*# sourceMappingURL=style.css.map */
