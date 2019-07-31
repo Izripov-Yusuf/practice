@@ -1,6 +1,23 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -43,23 +60,6 @@ img {
   padding: 18px 30px;
 }
 
-/* Подключение шрифтов */
-@font-face {
-  font-family: 'Museo Sans Cyrl 700';
-  src: url("../fonts/MuseoSansCyrl-700.eot");
-  src: local("../fonts/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo Sans Cyrl 300';
-  src: url("../fonts/MuseoSansCyrl-300.eot");
-  src: local("../fonts/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
 /* Импорт стилей шапки */
 .navbar {
   padding: 7px 0;
@@ -95,14 +95,16 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Museo Sans Cyrl 300";
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
   font-size: 13px;
   font-weight: 400;
 }
 
 .navbar__button {
   margin-left: 30px;
-  font-family: "Museo Sans Cyrl 700";
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 13px;
   font-weight: 400;
 }
@@ -110,7 +112,8 @@ img {
 .navbar__phone {
   display: inline-block;
   color: #333333;
-  font-family: "Museo Sans Cyrl 700";
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -148,13 +151,6 @@ img {
 }
 
 /* Стили для главного экрана */
-li {
-  font-family: "Museo Sans Cyrl 300";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 .hero {
   padding: 51px 0;
   background-color: #f5f5f5;
@@ -172,18 +168,18 @@ li {
 }
 
 .hero-text__title {
-  font-family: "Museo Sans Cyrl 700";
-  font-size: 41px;
-  font-weight: 400;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
   line-height: 55px;
   margin-bottom: 40px;
 }
 
 .hero-text__subtitle {
   display: inline-block;
-  font-family: "Museo Sans Cyrl 700";
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 20px;
-  font-weight: 400;
   margin-bottom: 69px;
 }
 
@@ -199,7 +195,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .hero-list__image {
@@ -277,9 +273,9 @@ li {
 }
 
 li {
-  font-family: "Museo Sans Cyrl 300";
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
