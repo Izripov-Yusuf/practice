@@ -1,5 +1,8 @@
+*
+ box-sizing: border-box
 body
  +reg
+ color: $text_color
 img
  max-width: 100%
 .container
@@ -25,3 +28,23 @@ img
  border: none
  outline: none
  padding: 18px 30px
+ +bold
+ &:hover
+  background-color: lighten($main-color, 10%)
+  cursor: pointer
+.section
+ padding: 90px 0
+ &-title
+  font-size: 24px
+  +bold
+ &-subtitle
+  display: block
+  font-size: 16px
+.input
+ border: 1px solid $border-input
+ padding: 20px 26px
+ font-size: 15px
+ border-radius: 10px
+ &:focus
+  outline: none
+  border: 1px solid orange

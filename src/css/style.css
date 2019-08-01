@@ -15,9 +15,15 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
+  color: #333333;
 }
 
 img {
@@ -58,6 +64,40 @@ img {
   border: none;
   outline: none;
   padding: 18px 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid orange;
 }
 
 /* Импорт стилей шапки */
@@ -198,6 +238,10 @@ img {
   margin-bottom: 22px;
 }
 
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .hero-list__image {
   width: 40px;
   height: 40px;
@@ -277,5 +321,177 @@ li {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+}
+
+/* Подключаем стили для блока offer */
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.offer {
+  background: url("../img/offer/offer-bg.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+  padding-top: 52px;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__form {
+  width: 495px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+  min-height: 65px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 31px;
+}
+
+.offer .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer .wrap .manager__return {
+  width: 230px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer .wrap .tel__return {
+  width: 192px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer .wrap .tel__return .our-tel {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__form {
+    width: 100%;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 14px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .offer .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer .wrap .manager__return {
+    line-height: 19px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer .wrap .tel__return {
+    width: 72%;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .offer {
+    padding-top: 35px;
+  }
+  .offer-block {
+    margin-left: 3px;
+  }
+  .offer__title {
+    font-size: 18px;
+    max-width: 260px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
+  .offer__input {
+    max-width: 275px;
+    min-height: 65px;
+  }
+  .offer__button {
+    max-width: 275px;
+    min-height: 70px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+  .offer__form {
+    margin-bottom: 20px;
+  }
+  .offer .wrap .manager__return {
+    width: 81%;
+    line-height: 21px;
+  }
+  .offer .wrap .tel__return {
+    line-height: 24px;
+  }
+}
+
+.small {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
