@@ -355,8 +355,8 @@ a {
 
 .offer__title {
   max-width: 360px;
-  line-height: 37px;
-  margin-bottom: 10px;
+  line-height: 35px;
+  margin-bottom: 20px;
 }
 
 .offer__subtitle {
@@ -489,9 +489,11 @@ a {
   .offer .wrap .tel__return {
     line-height: 24px;
   }
-}
-
-.small {
-  display: block;
+  .offer .wrap .tel__return a {
+    display: block;
+  }
+  .small {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
