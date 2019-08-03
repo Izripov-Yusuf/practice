@@ -516,10 +516,20 @@ a {
 
 .modal-dialog {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
-  max-width: 450px;
+  max-width: 570px;
   width: 90%;
-  min-height: 200px;
+  min-height: 674px;
   background-color: #fff;
   padding: 40px;
 }
@@ -528,5 +538,88 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-dialog__title {
+  margin-bottom: 40px;
+  max-width: 320px;
+  text-align: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.modal-dialog__subtitle {
+  margin: 30px 0 35px;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__input {
+  width: 370px;
+  min-height: 65px;
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  margin: 15px 0 30px;
+  width: 370px;
+  min-height: 70px;
+}
+
+.modal-tel__return {
+  max-width: 295px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.modal-tel__return .our-tel {
+  margin-top: 15px;
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 370px;
+    min-height: 470px;
+  }
+  .modal-dialog__subtitle {
+    margin-bottom: 15px;
+  }
+  .modal__input {
+    width: 100%;
+    min-height: 35px;
+    margin-bottom: 10px;
+  }
+  .modal__button {
+    margin: 10px 0 20px;
+    width: 100%;
+    min-height: 70px;
+  }
+  -tel__return {
+    max-width: 295px;
+  }
+}
+
+@media (max-width: 567px) {
+  .modal-dialog {
+    max-width: 250px;
+    min-height: 350px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
