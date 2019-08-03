@@ -23,6 +23,12 @@
    position: absolute
    top: 0
    right: 0
+   width: 42px
+   height: 42px
+   background: transparent
+   border: none
+   outline: none
+   font-size: 30px
   &__title
    margin-bottom: 40px
    max-width: 320px
@@ -58,12 +64,12 @@
 @media (max-width: 768px)
  .modal
   &-dialog
-   max-width: 370px
+   width: 90%
    min-height: 470px
    &__subtitle
     margin-bottom: 15px
   &__input
-   width: 100%
+   max-width: 350px
    min-height: 35px
    margin-bottom: 10px
   &__button
@@ -76,5 +82,20 @@
 @media (max-width: 567px)
  .modal
   &-dialog
-   max-width: 250px
+   width: 90%
    min-height: 350px
+  &__input
+   width: 100%
+@media (max-width: 400px)
+ .modal
+  &-dialog
+   &__title
+    margin: 0
+    font-size: 18px
+    line-height: 24px
+   &__subtitle
+    margin: 10px 0
+  &-tel
+   &__return
+    .our-tel
+     font-size: 20px

@@ -538,6 +538,12 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
 }
 
 .modal-dialog__title {
@@ -595,14 +601,14 @@ a {
 
 @media (max-width: 768px) {
   .modal-dialog {
-    max-width: 370px;
+    width: 90%;
     min-height: 470px;
   }
   .modal-dialog__subtitle {
     margin-bottom: 15px;
   }
   .modal__input {
-    width: 100%;
+    max-width: 350px;
     min-height: 35px;
     margin-bottom: 10px;
   }
@@ -618,8 +624,25 @@ a {
 
 @media (max-width: 567px) {
   .modal-dialog {
-    max-width: 250px;
+    width: 90%;
     min-height: 350px;
+  }
+  .modal__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-dialog__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-dialog__subtitle {
+    margin: 10px 0;
+  }
+  .modal-tel__return .our-tel {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
