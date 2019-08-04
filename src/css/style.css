@@ -602,7 +602,7 @@ a {
 @media (max-width: 768px) {
   .modal-dialog {
     width: 90%;
-    min-height: 470px;
+    height: 580px;
   }
   .modal-dialog__subtitle {
     margin-bottom: 15px;
@@ -625,14 +625,17 @@ a {
 @media (max-width: 567px) {
   .modal-dialog {
     width: 90%;
-    min-height: 350px;
+    height: 580px;
   }
   .modal__input {
     width: 100%;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
+  .modal-dialog {
+    height: 500px;
+  }
   .modal-dialog__title {
     margin: 0;
     font-size: 18px;
