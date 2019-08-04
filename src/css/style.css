@@ -547,7 +547,7 @@ a {
 }
 
 .modal-dialog__title {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   max-width: 320px;
   text-align: center;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -557,7 +557,7 @@ a {
 }
 
 .modal-dialog__subtitle {
-  margin: 30px 0 35px;
+  margin-bottom: 35px;
 }
 
 .modal__form {
