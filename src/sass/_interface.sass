@@ -8,6 +8,20 @@ img
 .container
  width: 1170px
  margin: auto
+.scrollup
+ position: fixed
+ right: 30px
+ bottom: 30px
+ width: 40px
+ height: 40px
+ background: $main-color url(../img/icons/arrow-up.svg) no-repeat center
+ background-size: 30px
+ border: none
+ outline: none
+ transition: opacity 0.3s
+ opacity: 0
+ &_active
+  opacity: 1
 @media (max-width: 1200px)
  .container
   width: 760px
