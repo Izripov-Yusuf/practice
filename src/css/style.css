@@ -52,6 +52,7 @@ img {
 
 .scrollup_active {
   opacity: 1;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
