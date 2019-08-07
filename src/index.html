@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Lesson №18</title>
+ <title>Lesson №19</title>
  <link rel="stylesheet" href="css/normalize.css">
  <link rel="stylesheet" href="css/style.css">
 </head>
@@ -81,11 +81,12 @@
      <!-- /.section-title -->
      <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта! </span>
      <!-- /.section-subtitle -->
-     <form action="#" class="form offer__form">
-      <input type="text" class="input offer__input" placeholder="Ваше имя">
-      <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+     <form action="#" name="form" class="form offer__form" id="offer-form">
+      <input type="text" name="username" class="input offer__input" placeholder="Ваше имя" required>
+      <input type="tell" name="userphone" class="input offer__input" placeholder="Ваш телефон" required>
       <button class="button offer__button">Получить бесплатный<span class="small"> дизайн-проект</span></button>
      </form>
+     <div class="success"></div>
      <!-- /.form offer__form -->
      <div class="wrap">
       <div class="manager manager__return">Наш менеджер перезвонит Вам в течение 60 секунд</div>
@@ -105,24 +106,39 @@
 <div class="modal" id="modal">
  <div class="modal-dialog">
   <button class="modal-dialog__close" id="close">&times;</button>
-  <h2 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h2>
-  <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-  <form action="#" class="modal__form">
-   <input type="text" class="input modal__input" placeholder="Ваше имя">
-   <input type="tell" class="input modal__input" placeholder="Ваш телефон">
-   <button class="button modal__button">Узнать стоимость</button>
-   <div class="tel modal-tel__return">Или Вы можете перезвонить нам сами по телефону: <span class="our-tel"><a href="tel:+7(8182)42-51-31">+7 (8182) 42-51-31</a></span>
-   </div>
-  </form>
+  <div class="modal-column">
+   <div class="modal-content">Контент</div>
+  </div>
+  <!-- /.modal-column -->
+  <div class="modal-column">
+   <h2 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h2>
+   <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+   <form action="#" class="modal__form">
+     <input type="text" class="input modal__input" placeholder="Ваше имя">
+     <input type="tell" class="input modal__input" placeholder="Ваш телефон">
+     <button class="button modal__button">Узнать стоимость</button>
+     <div class="tel modal-tel__return">Или Вы можете перезвонить нам сами по телефону: <span class="our-tel"><a
+           href="tel:+7(8182)42-51-31">+7 (8182) 42-51-31</a></span>
+     </div>
+   </form>
+  </div>
+  <!-- /.modal-column -->
  </div>
   <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+<div class="modal-thank" id="overlay-thank">
+  <div class="overlay-thank">
+   <button class="overlay-thank__close" id="close-thank">&times;</button>
+   <h2 class="overlay-thank__title">Спасибо за заявку, скоро мы вам перезвоним.</h2>
+  </div>
+</div>
 <button class="scrollup scrollupp_active" id="scrollup"></button>
 <!-- <script src="js/main.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="js/modal.js"></script>
 <script src="js/interface.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
