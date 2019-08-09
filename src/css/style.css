@@ -101,6 +101,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -118,6 +119,10 @@ img {
 .input:focus {
   outline: none;
   border: 1px solid orange;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 /* Импорт стилей шапки */
@@ -377,6 +382,7 @@ a {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -517,7 +523,242 @@ a {
   }
 }
 
-/* Подключаем модального окна */
+/* Подключаем стили для блока portfolio */
+.price {
+  padding: 0;
+  padding-top: 86px;
+}
+
+.price__title {
+  margin: auto;
+  max-width: 515px;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.price__subtitle {
+  margin: 50px auto 59px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+.card__text {
+  padding: 38px 0 40px;
+}
+
+.card__title {
+  margin: 0 0 28px;
+  font-size: 18px;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  display: block;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__link {
+  display: inline-block;
+  position: relative;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card__link:hover:after {
+  height: 13px;
+}
+
+.card__link:after {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: -6px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .price {
+    padding-top: 52px;
+  }
+  .price__title {
+    font-size: 24px;
+  }
+  .price__subtitle {
+    margin: 27px 0 61px;
+    font-size: 14px;
+  }
+  .card__image {
+    max-width: 271px;
+    min-height: 171px;
+  }
+  .card__title {
+    margin: 30px 0 15px;
+    font-size: 14px;
+  }
+  .card__text {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 610px) {
+  .price__card {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .price {
+    padding: 0;
+  }
+  .price__title {
+    margin-bottom: 10px;
+    max-width: 286px;
+    padding-top: 44px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .price__subtitle {
+    margin: 27px 0 58px;
+  }
+  .price__card {
+    margin: 0 auto 32px;
+  }
+  .card__title {
+    margin: 0 0 12px;
+  }
+  .card__link:after {
+    bottom: -3px;
+  }
+}
+
+/* Подключаем стили для блока price */
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+  padding-bottom: 100px;
+}
+
+.portfolio__title {
+  max-width: 790px;
+  margin: auto;
+  margin-bottom: 92px;
+  line-height: 45px;
+  font-size: 30px;
+}
+
+.portfolio__title .br {
+  display: block;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: 68px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .slider {
+  margin: 0 -15px;
+}
+
+.portfolio .slider__image {
+  margin: auto;
+}
+
+.slick-slide {
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding-top: 43px;
+    background: #f5f5f5;
+  }
+  .portfolio-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .portfolio__title {
+    margin-bottom: 39px;
+    max-width: 280px;
+    line-height: 23px;
+    font-size: 18px;
+  }
+  .portfolio .slider__image {
+    max-width: 246px;
+    min-height: 186px;
+  }
+  .portfolio__arrows {
+    margin: 46px auto 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio {
+    padding: 0;
+    padding-bottom: 64px;
+  }
+}
+
+/* Подключаем стили модального окна */
 .modal {
   display: none;
   position: fixed;
