@@ -218,14 +218,17 @@ input.invalid {
 }
 
 @media (width: 320px) {
-  .navbar .button {
+  .navbar {
+    padding: 12px 0;
+  }
+  .navbar__button {
+    width: 138px;
+    height: 39px;
     margin-right: 10px;
     border-radius: 5px;
-  }
-  .navbar .navbar__button {
     font-size: 10px;
-    font-weight: 400;
-    padding: 13px 26px 14px 26px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
   }
 }
 
@@ -346,20 +349,19 @@ input.invalid {
     margin-left: 4px;
   }
   .hero-text__title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     line-height: 1.2;
   }
   .hero-list__image {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
-}
-
-li {
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
+  li {
+    font-family: 'Museo Sans Light', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 /* Подключаем стили для блока offer */
@@ -471,6 +473,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 6px;
   }
   .offer .wrap .manager__return {
     line-height: 19px;
@@ -496,6 +499,7 @@ a {
 @media (max-width: 567px) {
   .offer {
     padding-top: 35px;
+    padding-bottom: 48px;
   }
   .offer-block {
     margin-left: 3px;
@@ -504,9 +508,10 @@ a {
     font-size: 18px;
     max-width: 260px;
     line-height: 23px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
   }
   .offer__subtitle {
+    margin-bottom: 26px;
     font-size: 14px;
   }
   .offer__input {
@@ -516,7 +521,7 @@ a {
   .offer__button {
     max-width: 275px;
     min-height: 70px;
-    line-height: 18px;
+    line-height: 17px;
     margin-bottom: 0;
   }
   .offer__form {
@@ -524,13 +529,17 @@ a {
   }
   .offer .wrap .manager__return {
     width: 81%;
-    line-height: 21px;
+    line-height: 24px;
+    margin-bottom: 8px;
   }
   .offer .wrap .tel__return {
     line-height: 24px;
   }
   .offer .wrap .tel__return a {
     display: block;
+  }
+  input {
+    padding: 20px 26px 20px 22px !important;
   }
   .small {
     display: block;
@@ -686,7 +695,7 @@ a {
     line-height: 22px;
   }
   .price__subtitle {
-    margin: 27px 0 58px;
+    margin: 25px 0 58px;
   }
   .price__card {
     margin: 0 auto 32px;
@@ -752,6 +761,7 @@ a {
   }
   .portfolio__title {
     margin-bottom: 39px;
+    margin-left: 2px;
     max-width: 280px;
     line-height: 23px;
     font-size: 18px;
@@ -794,6 +804,24 @@ a {
 }
 
 .step__image {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 28px;
+}
+
+.step__image-two {
   width: 100px;
   height: 100px;
   border: 3px solid #ffd200;
@@ -884,9 +912,13 @@ a {
   .step__text {
     font-size: 12px;
     line-height: 16px;
+    max-width: 133px;
   }
   .step__image {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+  }
+  .step__image-two {
+    margin-bottom: 28px;
   }
   .steps {
     padding-top: 0;
@@ -1124,6 +1156,272 @@ a {
   }
   .form__description {
     font-size: 14px;
+  }
+}
+
+/* Подключаем стили для блока materials */
+.materials-header {
+  margin-bottom: 104px;
+  background-color: #ffc000;
+  width: 100%;
+  height: 280px;
+}
+
+.materials-header__title {
+  margin: auto;
+  padding: 88px 0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.materials-header__title .br {
+  display: block;
+}
+
+.materials__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 143px;
+}
+
+.materials-card {
+  margin-right: 30px;
+  background-color: #f7f7f7;
+}
+
+.materials-card:last-child {
+  margin-right: 0;
+}
+
+.materials-card__image {
+  max-width: 370px;
+  height: 270px;
+}
+
+.materials-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.materials-card__text {
+  margin: 20px auto 50px 26px;
+  max-width: 290px;
+  line-height: 23px;
+}
+
+.materials-card__text .bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .materials-header {
+    height: 230px;
+  }
+  .materials-header__title {
+    padding: 60px 0;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .materials-header {
+    height: 230px;
+    margin-bottom: 50px;
+  }
+  .materials-header__title {
+    padding: 64px;
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .materials__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  .materials-card {
+    margin-right: 0;
+    margin-bottom: 51px;
+  }
+}
+
+@media (max-width: 567px) {
+  .materials-header__title {
+    max-width: 270px;
+    padding: 62px 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 420px) {
+  .materials-header {
+    margin-bottom: 59px;
+  }
+  .materials-header__title {
+    padding: 68px 0;
+    line-height: 22px;
+  }
+  .materials-card {
+    margin-bottom: 30px;
+  }
+  .materials-card__text {
+    max-width: 220px;
+    margin: 16px auto 36px 22px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .materials-card__text .small {
+    display: block;
+  }
+  .materials-card__image {
+    margin-left: 6px;
+    max-width: 274px;
+    height: 200px;
+  }
+}
+
+/* Подключаем стили для блока footer */
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 640px;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 100px 0 0 215px;
+}
+
+.contacts li {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.contacts__title {
+  max-width: 340px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 90px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 6px 21px 0 0;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.contacts-list__text .bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.br {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding: 60px 0 0 120px;
+  }
+  .contacts__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+  .contacts__title .br {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .footer-block .map {
+    position: initial;
+    width: 100%;
+  }
+  .footer-block .contacts {
+    padding: 0;
+    margin: auto;
+  }
+  .footer-block .contacts-block {
+    display: -webkit-box;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-block .contacts {
+    padding: 0 0 0 12px;
+    margin-bottom: 24px;
+  }
+  .footer-block .contacts-list__icon {
+    margin: 6px 13px 0 0;
+  }
+  .footer-block .contacts__title {
+    margin: 0 0 32px;
+    padding-top: 62px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .footer-block .contacts__title .br {
+    display: block;
   }
 }
 
