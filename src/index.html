@@ -9,11 +9,11 @@
  <link rel="stylesheet" href="css/animate.css">
  <link rel="stylesheet" href="css/slick.css">
  <link rel="stylesheet" href="css/style.css">
- !-- Yandex.Metrika counter -->
+ <!-- Yandex.Metrika counter -->
 <script
-  type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54893011, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+  type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54893671, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
 <noscript>
-  <div><img src="https://mc.yandex.ru/watch/54893011" style="position:absolute; left:-9999px;" alt="" /></div>
+  <div><img src="https://mc.yandex.ru/watch/54893671" style="position:absolute; left:-9999px;" alt="" /></div>
 </noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
@@ -30,7 +30,7 @@
       <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
      </div>
      <!-- /.navbar__contacts -->
-     <button class="button navbar__button" id="button">Перезвоните мне</button>
+     <button class="button navbar__button" onclick="ym(54893671, 'reachGoal', 'button'); return true;" id="button">Перезвоните мне</button>
      <!-- /.button navbar__button -->
     </div>
     <!-- /.navbar__info -->
@@ -91,8 +91,7 @@
      <!-- /.section-subtitle -->
      <form action="#" name="form" class="form offer__form" id="offer-form">
       <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-      <input type="tell" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
-      <input type="email" name="email" class="input offer__input" placeholder="Ваш email">
+      <input type="tell" name="userphone" class="input offer__input phone" placeholder="Ваш телефон">
       <button class="button offer__button">Получить бесплатный<span class="small"> дизайн-проект</span></button>
      </form>
      <div class="success"></div>
@@ -340,11 +339,11 @@
           </li>
           <li class="interview-list__item item-two">
            <span class="interview-list__counter">2</span>
-           <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span>
+           <span class="interview-list__text text-two">У Вас новостройка или вторичное жилье?</span>
           </li>
           <li class="interview-list__item item-three">
-           <span class="interview-list__counter">3</span>
-           <span class="interview-list__text">Где находится помещение,<span class="small"></span> в котором будет<span class="small"></span> производиться ремонт?</span>
+           <span class="interview-list__counter counter-three">3</span>
+           <span class="interview-list__text text-three">Где находится помещение,<span class="small"></span> в котором будет<span class="small"></span> производиться ремонт?</span>
           </li>
           <li class="interview-list__item item-four">
            <span class="interview-list__counter">4</span>
@@ -359,7 +358,6 @@
          <form action="#" id="brif-form">
           <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
           <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
-          <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
           <button class="button brif__button">Рассчитать стоимость</button>
           <span class="form__description">Мы перезвоним Вам<span class="small"></span> в течение 60 секунд</span>
          </form>
@@ -440,7 +438,7 @@
 <!-- /.modal -->
 <div class="modal-thank" id="overlay-thank">
   <div class="overlay-thank">
-   <button class="overlay-thank__close" id="close-thank">&times;</button>
+   <button class="overlay-thank__close" onclick="ym(54893671, 'reachGoal', 'offer-form'); return true;" id="close-thank">&times;</button>
    <h2 class="overlay-thank__title">Спасибо за заявку, скоро мы вам перезвоним.</h2>
   </div>
 </div>
@@ -471,10 +469,6 @@
     },
     phone: {
      required: true
-    },
-    email: {
-     required: true,
-     email: true
     }
    },
    messages: {
@@ -484,8 +478,7 @@
     },
     phone: {
      required: "Заполните поле"
-    },
-    email: "Введите корректный email" 
+    }
    }
   });
   $('#offer-form').validate({
@@ -499,10 +492,6 @@
     },
     phone: {
      required: true
-    },
-    email: {
-     required: true,
-     email: true
     }
    },
    messages: {
@@ -512,8 +501,7 @@
     },
     phone: {
      required: "Заполните поле"
-    },
-    email: "Введите корректный email"
+    }
    }
   });
   /* Маска для телефона */

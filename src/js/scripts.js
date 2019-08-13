@@ -13,6 +13,7 @@ $(document).ready(function () {
    type: 'POST',
    data: $(this).serialize(),
    success: function (data) {
+    $('.success').html(data + ', Ваша форма отправлена.');
     $('form :input').val('');
     modal.addClass('modal-thank_active');
     close.on('click', function () {

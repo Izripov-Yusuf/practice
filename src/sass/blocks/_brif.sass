@@ -5,7 +5,7 @@
  background-repeat: repeat-y, no-repeat
  padding: 0
  padding-top: 80px
- padding-bottom: 50px
+ padding-bottom: 74px
  &-block
   display: flex
  &__interview
@@ -42,7 +42,7 @@
   padding: 0
   &__item
    display: flex
-   align-items: center
+   align-items: flex-end
    margin-bottom: 25px
    +bold
   &__counter
@@ -56,6 +56,7 @@
    border: 2px solid $text-color
    border-radius: 50%
   &__text
+   margin-bottom: 6px
    max-width: 390px
    font-size: 18px
    line-height: 23px
@@ -67,8 +68,17 @@
   line-height: 33px
  &__subtitle
   display: block
-  margin: 44px 0 51px
+  margin: 46px 0 51px
   font-size: 16px
+.item
+ &-two
+  margin-bottom: 18px
+.text
+ &-three
+  margin-top: 18px
+.counter
+ &-three
+  margin-bottom: 20px
 @media (max-width: 1200px)
  .brif
   &__interview
